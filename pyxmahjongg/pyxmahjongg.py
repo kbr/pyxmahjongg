@@ -93,7 +93,7 @@ commercial uses of this program are prohibited.
 """
 
 APPLICATION_NAME = 'py-xmahjongg'
-__version__ = '0.2 20170222'
+__version__ = '0.2.2 20170413'
 
 
 class Tile:
@@ -396,14 +396,16 @@ class Application(tk.Frame):
         self.create_board(width, height, tile_positions, background_color)
 
     def create_buttons(self):
+        btn_ypos = 8
+        btn_height = 24
         self.btn_quit = tk.Button(self.canvas, text='Quit', command=self.quit)
-        self.btn_quit.place(x=10, y=8, height=24, width=80)
+        self.btn_quit.place(x=10, y=btn_ypos, height=btn_height, width=80)
         self.btn_new_game = tk.Button(
             self.canvas, text='New Game', command=self.new_game)
-        self.btn_new_game.place(x=100, y=8, height=24, width=100)
+        self.btn_new_game.place(x=100, y=btn_ypos, height=btn_height, width=100)
         self.btn_undo = tk.Button(
             self.canvas, text='Undo', command=self.undo_move)
-        self.btn_undo.place(x=210, y=8, height=24, width=80)
+        self.btn_undo.place(x=210, y=btn_ypos, height=btn_height, width=80)
 
     def create_text_fields(self, width):
         self.tiles_left_field = self.canvas.create_text(
@@ -435,9 +437,9 @@ class Application(tk.Frame):
         self.canvas.itemconfigure(self.possible_moves_field, text=str(num))
 
 
-def read_layout(name='deepwell'):
+def read_layout(name='default'):
     """
-    Returns a list will all tile-positions for the given layout.
+    Returns a list with all tile-positions for the given layout.
     The list must have 144 tuples with row, column, level.
     """
     fname = os.path.join(HERE, 'layouts', name)
