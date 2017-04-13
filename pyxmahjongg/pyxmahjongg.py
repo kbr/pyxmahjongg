@@ -31,6 +31,7 @@ from tkinter import TclError
 
 from PIL import Image, ImageTk
 
+HERE = os.path.abspath(os.path.dirname(__file__))
 
 WINDOW_POSITION_X = 140
 WINDOW_POSITION_Y = 80
@@ -142,7 +143,7 @@ class Board(tk.Canvas):
         super().__init__(window, bg=bg)
         self.application = application
         self.background_color = bg
-        self.fname = os.path.abspath(os.path.join('images', 'dorothys.png'))
+        self.fname = os.path.join(HERE, 'images', 'dorothys.png')
         self.tiles = {}
         self.removed_tiles = []
         self.selected_tile = None
@@ -439,7 +440,7 @@ def read_layout(name='deepwell'):
     Returns a list will all tile-positions for the given layout.
     The list must have 144 tuples with row, column, level.
     """
-    fname = os.path.abspath(os.path.join('layouts', name))
+    fname = os.path.join(HERE, 'layouts', name)
     with open(fname) as f:
         return [tuple(map(int, line.strip().split()))
                 for line in f if not line.startswith('#')]
@@ -491,7 +492,8 @@ def get_commandline_arguments():
     return args
 
 
-def main(args):
+def main():
+    args = get_commandline_arguments()
     print('\nrunning: {} v{}'.format(APPLICATION_NAME, __version__))
     tile_positions = read_layout(name=args.layout)
     background_color = get_background_color(bg=args.background)
@@ -510,4 +512,4 @@ def main(args):
 
 
 if __name__ == '__main__':
-    main(args=get_commandline_arguments())
+    main()
