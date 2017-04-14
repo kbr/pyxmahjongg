@@ -8,7 +8,7 @@ def readme():
 
 
 setup(name='pyxmahjongg',
-      version='0.2.2',
+      version='0.2.3',
       description='The classic UNIX xmahjongg for Python 3',
       long_description=readme(),
       entry_points={'console_scripts': [
