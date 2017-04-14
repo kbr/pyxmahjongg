@@ -8,16 +8,30 @@ https://www.lcdf.org/xmahjongg/
 The python implementation does not need the X11 files anymore, however the name is still 'pyxmahjongg'.
 
 
+Installation
+------------
+
+Installation can be done by pip:
+
+    pip install pyxmahjongg
+
+It's recommended to use a virtual environment.
+
+Or you can download the sources: https://github.com/kbr/pyxmahjongg
+
+
 Run the program
 ---------------
+
+After installation with pip the program can get started from the command line, i.e. using a different layout and background than the default one:
+
+    pyxmahjongg -l deepwell -b sand
+
+From the sources start the program manually:
 
     python pyxmahjongg.py -h
 
 Use the optional -h flag for help to change colors and layouts.
-
-As the distribution (since version 0.2.3) uses entrypoints it is also possible to start the programm from the command line, i.e. using a different layout and background than the default one:
-
-    pyxmahjongg -l deepwell -b sand
 
 
 Requirements

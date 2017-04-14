@@ -95,7 +95,7 @@ commercial uses of this program are prohibited.
 """
 
 APPLICATION_NAME = 'pyxmahjongg'
-__version__ = '0.2.4 20170414'
+__version__ = '0.2.5 20170414'
 
 
 class Tile:
