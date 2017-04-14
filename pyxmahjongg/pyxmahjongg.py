@@ -89,13 +89,13 @@ kind are stacked. Default is True.
 APPLICATION_DESCRIPTION = """
 Python rewrite of the original xmahjongg game for Unix from 1988 with
 several rewrites thereafter: (https://www.lcdf.org/xmahjongg/). So far
-just dorothys tileset is implemented. Because of the original licens it
+just dorothys tileset is implemented. Because of the original license it
 is permitted to use the tileset for non-profit purposes. Therefore any
 commercial uses of this program are prohibited.
 """
 
 APPLICATION_NAME = 'pyxmahjongg'
-__version__ = '0.2.3 20170414'
+__version__ = '0.2.4 20170414'
 
 
 class Tile:
