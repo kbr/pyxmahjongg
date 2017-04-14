@@ -27,9 +27,9 @@ Requires 'pillow' for image-handling.
 Remarks
 -------
 
-This implementation uses the same layout-files as the original one but just the dorothys tileset. Excerpt from the original documentation:
+This implementation uses the same layout-files as the original one but just the dorothys tileset. Thanks to Tabitha for finding background colors and naming.
 
-The default tileset was originally created in color by Dorothy Robinson <mokuren@teleport.com> with Mark A. Holm <markh@aracnet.com>. The publically available version was in black-and-white. Holm copyrighted the tiles in 1988, giving permission to copy and distribute for non-profit purposes. The significantly altered color version that comes with xmahjongg was created by Eddie Kohler in later years.
+Excerpt from the original documentation: The default tileset was originally created in color by Dorothy Robinson <mokuren@teleport.com> with Mark A. Holm <markh@aracnet.com>. The publically available version was in black-and-white. Holm copyrighted the tiles in 1988, giving permission to copy and distribute for non-profit purposes. The significantly altered color version that comes with xmahjongg was created by Eddie Kohler in later years.
 
 
 License

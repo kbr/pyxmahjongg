@@ -1,19 +1,21 @@
 """
-py-xmahjongg
+pyxmahjongg
 Author: Klaus Bremer
 
 python rewrite of the original xmahjongg from 1988:
 https://www.lcdf.org/xmahjongg/
 
 This implementation uses the same layout-files as the original one but
-just the dorothys tileset. Excerpt from the original documentation:
+just the dorothys tileset. Thanks to Tabitha for finding background
+colors and naming.
 
-The default tileset was originally created in color by Dorothy Robinson
-<mokuren@teleport.com> with Mark A. Holm <markh@aracnet.com>. The
-publically available version was in black-and-white. Holm copyrighted
-the tiles in 1988, giving permission to copy and distribute for
-non-profit purposes. The significantly altered color version that comes
-with xmahjongg was created by Eddie Kohler in 1993.
+Excerpt from the original documentation: The default tileset was
+originally created in color by Dorothy Robinson <mokuren@teleport.com>
+with Mark A. Holm <markh@aracnet.com>. The publically available version
+was in black-and-white. Holm copyrighted the tiles in 1988, giving
+permission to copy and distribute for non-profit purposes. The
+significantly altered color version that comes with xmahjongg was
+created by Eddie Kohler in 1993.
 
 Because of the original licens it is permitted to use the tileset for
 non-profit purposes. As a consequence any commercial uses of this
@@ -92,8 +94,8 @@ is permitted to use the tileset for non-profit purposes. Therefore any
 commercial uses of this program are prohibited.
 """
 
-APPLICATION_NAME = 'py-xmahjongg'
-__version__ = '0.2.2 20170413'
+APPLICATION_NAME = 'pyxmahjongg'
+__version__ = '0.2.3 20170414'
 
 
 class Tile:
